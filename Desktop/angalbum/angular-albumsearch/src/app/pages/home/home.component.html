@@ -1,0 +1,5 @@
+<app-header></app-header>
+<app-search (searchInputEvent)="filterAlbuns($event)"></app-search>
+<section class="container">
+ <app-album-list [albums]="filteredAlbuns"></app-album-list>
+</section>

@@ -1,0 +1,12 @@
+.photoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    > .photoitem {
+    width: 31%;
+    img {
+    width: 100%;
+    }
+    }
+   }

@@ -1,0 +1,8 @@
+<div class="photoList">
+    <div *ngFor="let photo of photos; index as i" class="photoitem">
+    <a href="#" (click)="openDialog($event, photo)">
+    <img [src]="photo.thumbnailUrl" alt="" />
+    </a>
+    </div>
+   </div>
+   

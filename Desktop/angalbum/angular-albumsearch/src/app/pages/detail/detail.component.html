@@ -1,0 +1,15 @@
+<app-header></app-header>
+<section class="container">
+ <button mat-flat-button color="primary" routerLink="/" aria-label="Voltar">
+ <mat-icon>keyboard_arrow_left</mat-icon> Voltar
+ </button>
+ <h2>{{ album.title }}</h2>
+ <mat-card>
+ <mat-card-content>
+ <h4>Postado por:</h4>
+ <app-user-info [user]="user"></app-user-info>
+ </mat-card-content>
+ </mat-card>
+ <h2>Fotos</h2>
+ <app-photo-list [photos]="photos"></app-photo-list>
+</section>
